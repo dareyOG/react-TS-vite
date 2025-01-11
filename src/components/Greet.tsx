@@ -1,14 +1,14 @@
 type Greet = {
   name: string;
-  messageCount: number;
+  messageCount?: number; // optional type
   isLoggedIn: boolean;
 };
 
-function Greet({ name, messageCount, isLoggedIn }: Greet) {
+function Greet({ name, messageCount = 5, isLoggedIn }: Greet) {
   return (
     <div>
       <h2>
-        {isLoggedIn
+        {!isLoggedIn
           ? `Welcome ${name}!, you have ${messageCount} unread messages`
           : 'Welcome Guest'}
       </h2>
