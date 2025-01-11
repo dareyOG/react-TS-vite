@@ -6,6 +6,7 @@ function LoggedIn(): React.JSX.Element {
   const handleLogIn = () => {
     setIsLoggedIn(true);
   };
+
   const handleLogOut = () => {
     setIsLoggedIn(false);
   };
