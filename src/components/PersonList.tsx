@@ -1,5 +1,7 @@
+import { Name } from './Person.type';
+
 type PersonList = {
-  names: { first: string; last: string }[];
+  names: Name[];
 };
 
 function PersonList({ names }: PersonList) {

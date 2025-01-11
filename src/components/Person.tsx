@@ -1,6 +1,4 @@
-type Person = {
-  name: { first: string; last: string };
-};
+import { Person as PersonProp } from './Person.type';
 
 /* function Person(props: Person) {
   return (
@@ -10,7 +8,7 @@ type Person = {
   );
 } */
 
-function Person({ name }: Person) {
+function Person({ name }: PersonProp) {
   return (
     <div>
       {name.first} {name.last}
