@@ -5,6 +5,8 @@ import Box from './components/context/Box';
 import { ThemeProvider } from './components/context/ThemeContext';
 import User from './components/context/User';
 import { UserContextProvider } from './components/context/UserContext';
+import DomRef from './components/effect/DomRef';
+import MutableRef from './components/effect/MutableRef';
 import Greet from './components/Greet';
 import Heading from './components/Heading';
 import Input from './components/Input';
@@ -49,6 +51,8 @@ function App() {
       <UserContextProvider>
         <User />
       </UserContextProvider>
+      <DomRef />
+      <MutableRef />
     </div>
   );
 }

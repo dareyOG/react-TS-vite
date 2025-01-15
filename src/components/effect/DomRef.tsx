@@ -5,6 +5,15 @@ export default function DomRef() {
 
   useEffect(function () {
     inputRef.current?.focus();
+
+    // const Focus = (e: { key: string }) => {
+    //   if (e.key === 'Enter') inputRef.current?.focus();
+    // };
+
+    // document.addEventListener('keydown', Focus);
+    // return () => {
+    //   document.removeEventListener('keydown', Focus);
+    // };
   }, []);
 
   return (
