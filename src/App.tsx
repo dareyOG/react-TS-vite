@@ -1,4 +1,6 @@
 import '../src/index.css';
+import Private from './components/auth/Private';
+import Profile from './components/auth/Profile';
 import Button from './components/Button';
 import Container from './components/Container';
 import Box from './components/context/Box';
@@ -6,7 +8,7 @@ import { ThemeProvider } from './components/context/ThemeContext';
 import User from './components/context/User';
 import { UserContextProvider } from './components/context/UserContext';
 import DomRef from './components/effect/DomRef';
-import MutableRef from './components/effect/MutableRef';
+// import MutableRef from './components/effect/MutableRef';
 import Greet from './components/Greet';
 import Heading from './components/Heading';
 import Input from './components/Input';
@@ -52,7 +54,8 @@ function App() {
         <User />
       </UserContextProvider>
       <DomRef />
-      <MutableRef />
+      {/* <MutableRef /> */}
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
