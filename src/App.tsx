@@ -19,7 +19,6 @@ import PersonList from './components/PersonList';
 import LoggedIn from './components/state/LoggedIn';
 import Status from './components/Status';
 import RandomNumber from './components/restriction/RandomNumber';
-import Toast from './components/TemplateLiterals/Toast';
 
 function App() {
   const personName = { first: 'Tomas', last: 'Soucek' };
@@ -61,7 +60,6 @@ function App() {
       <Private isLoggedIn={true} component={Profile} />
       <Themes />
       <RandomNumber value={-5} isNegative />
-      <Toast position="center-top" />
     </div>
   );
 }
