@@ -20,6 +20,8 @@ import LoggedIn from './components/state/LoggedIn';
 import Status from './components/Status';
 import RandomNumber from './components/restriction/RandomNumber';
 import Toast from './components/TemplateLiterals/Toast';
+import CustomButton from './components/html/CustomButton';
+import CustomInput from './components/html/CustomInput';
 
 function App() {
   const personName = { first: 'Tomas', last: 'Soucek' };
@@ -62,6 +64,11 @@ function App() {
       <Themes />
       <RandomNumber value={-5} isNegative />
       <Toast position={'center'} />
+      <CustomButton btnType={'small'} onClick={() => console.log('clicked')}>
+        smallBtn
+      </CustomButton>
+      {/* <CustomInput type={'password'} /> */}
+      <CustomInput />
     </div>
   );
 }
