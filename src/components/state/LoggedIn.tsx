@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function LoggedIn(): React.JSX.Element {
+function LoggedIn() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogIn = () => {

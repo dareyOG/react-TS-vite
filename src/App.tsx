@@ -8,6 +8,7 @@ import { ThemeProvider } from './components/context/ThemeContext';
 import User from './components/context/User';
 import { UserContextProvider } from './components/context/UserContext';
 import DomRef from './components/effect/DomRef';
+import Themes from './components/generics/Themes';
 // import MutableRef from './components/effect/MutableRef';
 import Greet from './components/Greet';
 import Heading from './components/Heading';
@@ -17,6 +18,7 @@ import Person from './components/Person';
 import PersonList from './components/PersonList';
 import LoggedIn from './components/state/LoggedIn';
 import Status from './components/Status';
+import RandomNumber from './components/restriction/RandomNumber';
 
 function App() {
   const personName = { first: 'Tomas', last: 'Soucek' };
@@ -56,6 +58,8 @@ function App() {
       <DomRef />
       {/* <MutableRef /> */}
       <Private isLoggedIn={true} component={Profile} />
+      <Themes />
+      <RandomNumber value={-5} isNegative />
     </div>
   );
 }
