@@ -64,11 +64,6 @@ function App() {
       <Themes />
       <RandomNumber value={-5} isNegative />
       <Toast position={'center'} />
-      <CustomButton btnType={'small'} onClick={() => console.log('clicked')}>
-        smallBtn
-      </CustomButton>
-      {/* <CustomInput type={'password'} /> */}
-      <CustomInput />
     </div>
   );
 }
